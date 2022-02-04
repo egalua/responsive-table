@@ -1,0 +1,19 @@
+// mobile table__index-box
+.table__index-box{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1 0 auto;
+}
+.table__index-box span{
+    text-align: left;
+}
+
+@media (min-width: 320px){
+
+}
+
+// desktop table__index-box 
+@media (min-width: 1440px){
+
+}

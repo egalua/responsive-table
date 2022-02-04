@@ -1,0 +1,47 @@
+// mobile table-container
+.table-container{
+    min-width: 320px;
+    max-width: 1440px;
+    margin: auto;
+}
+// mobile table-content-wrapper
+.table-content-wrapper{
+    $fontSize: 16px;
+    $fontWeight: 400;
+    $lineHeight: 120%;
+
+    @include get-font($fontSize, $fontWeight, $lineHeight);
+
+    position: relative;   
+}
+
+// desktop table-content-wrapper
+@media (min-width: 1440px){
+    .table-content-wrapper{
+        max-height: 416px;
+
+        overflow-y: hidden;
+    }
+    .table-content-wrapper_expanded{
+        max-height: none;
+        overflow-y: visible;
+    }
+    .table-content-wrapper_expanded .show-all{
+        display: none;
+    }
+}
+
+// mobile table-wrapper
+.table-wrapper{
+    overflow-x: auto;
+}
+
+// mobile table-width-wrapper
+.table-width-wrapper{
+    min-width: 720px;
+    max-width: 1170px;
+    // width: 720px vw:320px ; width:1170px vw:1440px
+    width: calc(100vw * (47 / 112) + (3960px / 7)); 
+ 
+    margin: auto;
+}

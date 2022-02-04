@@ -1,0 +1,48 @@
+// mobile head cells
+.table__head-cell{
+    border-top: 1px solid #EFEFEF;
+
+    $fontSize: 16px;
+    $fontWeight: 450;
+    $lineHeight: 19.2px;
+
+    @include get-font($fontSize, $fontWeight, $lineHeight);
+
+    padding-top: 10px;
+    padding-bottom: 11px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    vertical-align: middle;
+    text-align: center;
+
+    position: relative;
+}
+
+@media (min-width: 320px){
+    .table__head-cell{
+        // font-size: 16px при 320px 24px при 1440px
+        font-size: calc(100vw * (1 / 140) + (96px / 7));
+        // line-height: 19.2px при 320hx line-height:28.8px при 1440px 
+        line-height: calc(100vw * (3 / 350) + (576px / 35));
+
+        // padding-top:10px при 320px padding-top:16px при 1440px
+        padding-top: calc(100vw * (3 / 560) + (58px / 7));
+        // padding-bottom: padding-top:11px при 320px padding-top:16px при 1440px
+        padding-bottom: calc(100vw * (1 / 224) + (67px / 7));
+    }
+}
+
+// desktop head cells
+@media (min-width: 1440px){
+    .table__head-cell{
+        border-top-style: none;
+        border-bottom: 1px solid #EFEFEF;
+
+        font-size: 24px;
+        line-height: 28.8px;
+
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}

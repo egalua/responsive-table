@@ -1,0 +1,14 @@
+//mobile
+.desktop-line-break{
+    display: none;
+}
+
+// desktop
+@media (min-width: 1440px){
+    .mobile-line-break{
+        display: none;
+    }
+    .desktop-line-break{
+        display: inline;
+    }
+}

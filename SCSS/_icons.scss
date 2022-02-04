@@ -1,0 +1,53 @@
+.help-icon{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    
+    border-radius: 50%;
+    background: 50% 50% no-repeat url('../img/question.svg');
+    
+    vertical-align: middle;
+}
+.disable-icon{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    background: 50% 50% no-repeat url('../img/no.svg'), #fff;
+}
+.energy-icon{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    background: 50% 50% no-repeat url('../img/lightning.svg'), #fff;
+
+}
+.home-icon{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    background: 50% 50% no-repeat url('../img/home.svg'), #fff;
+
+    flex-shrink: 0;
+}
+.enable-icon{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    background: 50% 50% no-repeat url('../img/ok.svg'), #fff;
+
+}
+.scroll-icon{
+    display: inline-block;
+    width: 14px;
+    height: 16px;
+
+    background: 50% 50% no-repeat url('../img/scroll-icon.svg');
+}

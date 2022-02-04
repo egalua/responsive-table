@@ -1,0 +1,41 @@
+// mobile cols
+.table__col-1{
+    width: 150px;
+}
+.table__col-2{
+    width: 190px;
+}
+.table__col-3{
+    width: 190px;
+}
+.table__col-4{
+    width: 190px;
+}
+
+@media (min-width: 320px){
+    .table__col-1{
+        // 150/720
+        width: calc(100% * 150/720);
+    }
+    .table__col-2{
+        // 190/720
+        width: calc(100% * 190/720);
+    }
+    .table__col-3{
+        // 190/720
+        width: calc(100% * 190/720);
+    }
+    .table__col-4{
+        // 190/720
+        width: calc(100% * 190/720);
+    }
+}
+
+// desktop cols
+@media (min-width: 1440px){
+    .table col{
+        min-width: auto;
+        max-width: auto;
+        width: auto;
+    }
+}

@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    *,*:before, *:after{
+        box-sizing: border-box;
+    }
+}
+.table__index,
+.table__cell{
+    padding: 0;
+}

@@ -1,0 +1,42 @@
+// mobile caption
+.caption{
+    max-width: 492px;
+    min-width: 300px;
+    width: calc(100vw * (6 / 35) + (1716px / 7));
+    
+    margin: auto;
+
+    $fontSize: 22px;
+    $lineHeight: 24.2px;
+    $fontWeight: 700;
+
+    padding-top: 15px;
+    padding-bottom: 25px;
+    
+    @include get-font($fontSize, $fontWeight, $lineHeight);
+    
+    text-align: center;
+}
+
+@media (min-width: 320px){
+    .caption{
+        // line-height: 46.2px при 1440px line-height: 24.2px при 320px
+        line-height: calc(100vw * (11 / 560) + (627px / 35));
+        // font-size:42px при 1440px font-size:22px при 320px
+        font-size: calc(100vw * (1 / 56) + (114px / 7));
+
+        // padding-bottom: 25px при 320px padding-bottom:40px при 1440px
+        padding-bottom: calc(100vw * (3 / 224) + (145px / 7));
+    }
+}
+
+// Desktop caption
+@media (min-width: 1440px){
+    .caption{
+        font-size: 42px;
+        line-height: 46.2px;
+
+        // margin-bottom: 40px;
+        padding-bottom: 40px;
+    }
+}

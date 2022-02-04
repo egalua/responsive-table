@@ -1,0 +1,32 @@
+@font-face{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400; // 400 450 700
+    src: url('/fonts/futura-pt-book.ttf'); //ttf
+    src: url('/fonts/futura-pt-book.otf'); //eot
+    src: url('/fonts/futura-pt-book.woff'); //woff
+}
+@font-face {
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 450; // 400 450 700
+    src: url('/fonts/futura-pt-medium.ttf');
+    src: url('/fonts/futura-pt-medium.eot');
+    src: url('/fonts/futura-pt-medium.woff');
+}
+@font-face {
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 700; // 400 450 700
+    src: url('../fonts/futura-pt-bold.ttf');
+    src: url('../fonts/futura-pt-bold.eot');
+    src: url('../fonts/futura-pt-bold.woff');
+}
+
+@mixin get-font($font-size, $font-weight, $line-height){
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}

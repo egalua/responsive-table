@@ -1,0 +1,18 @@
+// mobile table__cell-box
+.table__cell-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 auto;
+}
+.table__cell-box span{
+    text-align: center;
+}
+
+@media (min-width: 320px){
+
+}
+
+@media (min-width: 1440px){
+
+}
